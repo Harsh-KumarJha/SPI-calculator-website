@@ -1,0 +1,289 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPI_calc/HKJ</title>
+    <link rel="stylesheet" href="style.css">
+     
+</head>
+<style>
+    .Calculate-SPI {
+        background-color: rgb(93, 166, 226);
+        color: aliceblue;
+
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    table , th ,td{
+
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    align-content: center;
+    }
+    table{
+        margin-top: 5px;
+    }
+    .sub{
+        text-align: left;
+    }
+    td{
+    text-align: center;
+    }
+    tr{
+        transition: background-color 0.2s;
+    }
+    tr:hover {background-color: #e1eed6;}
+    .main{
+    background-color: #c4e6cb;
+    }
+    #s1,#s2,#s3,#s4,#s5,#s6,#s7,#s8{
+    border-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgb(59, 82, 173);
+    cursor: pointer;
+    }
+    .navinfo{
+    background-color: #052056;
+    font-size: xx-large;
+    text-align: center;
+    padding-bottom: 1px;
+    }
+    .navhr{
+    color: #E6DDC4;
+    }
+    .navt{
+    padding-top: 20px;
+    vertical-align: middle;
+    color: #E6DDC4;
+    }
+    .navsub{
+    font-size:large;
+    vertical-align: middle;
+    color: #E6DDC4;
+    }
+
+</style>
+<body>
+    <nav class="navinfo">
+        <p class="navt">SPI CALCULATOR</p>
+        <hr class="navhr">
+        <p class="navsub">Branch-Electronics & Communication Engg.</p>
+        <p class="navsub">SEMESTER-5</p>
+    </nav>
+<div class="main">
+<table>
+    <tbody>
+        <tr>
+            <th>
+                Subjects
+            </th>
+            <th>
+                Credits
+            </th>
+            <th>
+                Grade Obtained
+            </th>
+        </tr>
+        <tr>
+            <td class="sub">course1</td>
+            <td class="sub">4</td>
+            <td class="Grade">
+                
+                <select name="" id="s1">
+                    
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="IF">IF</option>
+                </select>
+                <!-- <span>&#10549;</span> -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="sub">course2</td>
+            <td class="sub">4</td>
+            <td class="Grade">
+                
+                <select name="" id="s2">
+                    
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="IF">IF</option>
+                </select>
+                <!-- <span>&#10549;</span> -->
+            </td>
+        </tr>
+        <tr>
+            <td class="sub">course3</td>
+            <td class="sub">4</td>
+            <td class="Grade">
+                
+                <select name="" id="s3">
+                    
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="IF">IF</option>
+                </select>
+                <!-- <span>&#10549;</span> -->
+            </td>
+        </tr>
+        <tr>
+            <td class="sub">DepartmentElective</td>
+            <td class="sub">4</td>
+            <td class="Grade">
+                
+                <select name="" id="s4">
+                    
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="IF">IF</option>
+                </select>
+                <!-- <span>&#10549;</span> -->
+            </td>
+        </tr>
+        <tr>
+            <td class="sub">OE 1</td>
+            <td class="sub">3</td>
+            <td class="Grade">
+                
+                <select name="" id="s5">
+                    
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="IF">IF</option>
+                </select>
+                <!-- <span>&#10549;</span> -->
+            </td>
+        </tr><tr>
+            <td class="sub">OE 2</td>
+            <td class="sub">3</td>
+            <td class="Grade">
+                
+                <select name="" id="s6">
+                    
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="IF">IF</option>
+                </select>
+                <!-- <span>&#10549;</span> -->
+            </td>
+        </tr>
+        <tr>
+            <td class="sub"></td>
+            <td class="final">
+                <button onclick="calc()" class="Calculate-SPI">
+                    Calculate
+                </button>
+            </td>
+            <td class="ans" id="ANS">
+            </td>
+        </tr>
+    </tbody>
+    
+</table>
+
+
+</body>
+
+<script>
+    function calc(){
+        var t=0;
+        //course1
+        var grd=document.getElementById('s1').value;
+        if(grd=='A+') t+=10*4;
+        if(grd=='A') t+=9*4;
+        if(grd=='B+') t+=8*4;
+        if(grd=='B') t+=7*4;
+        if(grd=='C+') t+=6*4;
+        if(grd=='C') t+=5*4;
+        if(grd=='IF') t+=0*4;
+
+        //course2
+        var grd=document.getElementById('s2').value;
+        if(grd=='A+') t+=10*4;
+        if(grd=='A') t+=9*4;
+        if(grd=='B+') t+=8*4;
+        if(grd=='B') t+=7*4;
+        if(grd=='C+') t+=6*4;
+        if(grd=='C') t+=5*4;
+        if(grd=='IF') t+=0*4;
+
+        //course3
+        var grd=document.getElementById('s3').value;
+        if(grd=='A+') t+=10*4;
+        if(grd=='A') t+=9*4;
+        if(grd=='B+') t+=8*4;
+        if(grd=='B') t+=7*4;
+        if(grd=='C+') t+=6*4;
+        if(grd=='C') t+=5*4;
+        if(grd=='IF') t+=0*4;
+
+        //DepartmentElective
+        var grd=document.getElementById('s4').value;
+        if(grd=='A+') t+=10*4;
+        if(grd=='A') t+=9*4;
+        if(grd=='B+') t+=8*4;
+        if(grd=='B') t+=7*4;
+        if(grd=='C+') t+=6*4;
+        if(grd=='C') t+=5*4;
+        if(grd=='IF') t+=0*4;
+
+        //OE-1
+        var grd=document.getElementById('s5').value;
+        if(grd=='A+') t+=10*3;
+        if(grd=='A') t+=9*3;
+        if(grd=='B+') t+=8*3;
+        if(grd=='B') t+=7*3;
+        if(grd=='C+') t+=6*3;
+        if(grd=='C') t+=5*3;
+        if(grd=='IF') t+=0*3;
+
+        //OE-2
+        var grd=document.getElementById('s6').value;
+        if(grd=='A+') t+=10*3;
+        if(grd=='A') t+=9*3;
+        if(grd=='B+') t+=8*3;
+        if(grd=='B') t+=7*3;
+        if(grd=='C+') t+=6*3;
+        if(grd=='C') t+=5*3;
+        if(grd=='IF') t+=0*3;
+
+        document.getElementById('ANS').innerHTML="SPI: "+(t/22).toFixed(4);
+
+    }
+</script>
